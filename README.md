@@ -31,8 +31,14 @@ This project aims to show how we can react to this requests and send a notificat
 
 ## 3. Put the app on your server
 
-0. you may want to change your webserver config to add a reverse proxy. Here is a quick and dirty configuration for nginx
+1. clone the repo
+2. install the dependancies : `pip install -r requirement.txt`
 
+4. Change the token with your real token
+5. Launch the app : `python app/app.py` 
+6. Test : press the button or go directly go to the adress in your brower (your.URL/button:31415)
+
+You may want to change your webserver config to add a reverse proxy. Here is a quick and dirty configuration for nginx
 ```nginx
 server {                                                                    
   listen 80 ;                                                             
@@ -46,12 +52,6 @@ server {
 }  
 ```
 
-1. clone the repo
-2. install the dependancies : `pip install -r requirement.txt`
-
-4. Change the token with your real token
-5. Launch the app : `python app/app.py` 
-6. Test : press the button or go directly go to the adress in your brower (your.URL/button:31415)
 
 ## Enjoy !
 You now have a connected doorbell ! 
